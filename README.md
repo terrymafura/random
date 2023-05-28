@@ -11,18 +11,6 @@
 
 ### Scenario 2
 
-Imagine a server with the following specs:
-- 4 times Intel(R) Xeon(R) CPU E7-4830 v4 @ 2.00GHz
-- 64GB of ram
-- 2 TB HDD disk space
-- 2 x 10Gbit/s nics
-
-The server is used for SSL offloading and proxies around 25000 requests per
-second. Please let us know which metrics are interesting to monitor in that specific
-case and how would you do that? What are the challenges of monitoring this?
-
-##### Answer:
-
 In order to monitor this ssl offloading server which proxies a huge number of requests, we can monitor the following metrics:
 
 - **Memory Usage:** We need to make sure that the server has enough RAM that can handle the multiple connections. This way we can understand if there are any leaks or possibly excessive use of memory
